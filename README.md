@@ -1,11 +1,5 @@
 # SS11 HW05 - WebClient và Kafka trong luồng thông báo
 
-**Sinh viên:** Đặng Khánh An
-
-**Lớp:** IT214
-
-**Mã sinh viên:** PTIT070
-
 ## 1. Tổng quan
 
 Notification Service lắng nghe sự kiện `order.created` từ topic `storex-order-events`. Sau khi nhận sự kiện, service gọi User Preference API để lấy kênh thông báo, sau đó gọi Email API hoặc Zalo API bằng WebClient.
